@@ -22,7 +22,7 @@ const AsideComponent = ({ Links = [] }) => {
     <>
       <div className="profile">
         <img
-          src="https://cdn.hmv.com/r/w-240/hmv/files/66/668de19b-7536-4190-965a-643927dae7cd.png"
+          src="https://cdn.hmv.com/r/w-640/hmv/files/66/668de19b-7536-4190-965a-643927dae7cd.png"
           alt="profile_picture"
         />
         <h3>Watter De Aza</h3>

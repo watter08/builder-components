@@ -2,7 +2,7 @@ import { memo } from "react";
 import FilterComponent from "../../Components/Filter/FilterComponent";
 
 const FilterPageComponent = () => {
-  return (
+    return (
     <div className="container">
       <div className="row">
         <div className="col-md-12">
@@ -12,35 +12,28 @@ const FilterPageComponent = () => {
       <div className="row">
         <div className="col-md-12">
         <FilterComponent Title="Filter Component Code">
-        <section>
-          <p>
-            {'const FilterComponent = ({ Title = "", children }) => {        '}
-          </p>
-          <p>{"  return ("}</p>
-          <p>{"    <>"}</p>
-          <p>{'      <div id="aspect-content">'}</p>
-          <p>{'        <div class="aspect-tab">'}</p>
-          <p>{"          <input"}</p>
-          <p>{'            id="item-18"'}</p>
-          <p>{'            type="checkbox"'}</p>
-          <p>{'            class="aspect-input"'}</p>
-          <p>{'            name="aspect"'}</p>
-          <p>{"          />"}</p>
-          <p>
-            {'          <label for="item-18" class="aspect-label"></label>'}
-          </p>
-          <p>{'          <div class="aspect-content">'}</p>
-          <p>{'            <span class="aspect-name">{Title}</span>'}</p>
-          <p>{"          </div>"}</p>
-          <p>{'          <div class="aspect-tab-content">'}</p>
-          <p>{'            <div class="sentiment-wrapper">{children}</div>'}</p>
-          <p>{"          </div>"}</p>
-          <p>{"        </div>"}</p>
-          <p>{"      </div>"}</p>
-          <p>{"    </>"}</p>
-          <p>{"  );"}</p>
-          <p>{"};"}</p>
-        </section>
+        <div className="col-md-12 code-box">
+           <p>{`   import { memo,useState } from "react";                                                                                                         `}</p>
+           <p>{`   const FilterComponent = ({ `}</p>
+           <p>{`     Title = "", `}</p>
+           <p>{`     HeaderClass = "primary",`}</p>
+           <p>{`     children }) => {`}</p>
+           <p>{`       const [isOpen , setIsOpen] = useState(false);`}</p>
+           <p>{`       const handleOpenClose = () => setIsOpen(!isOpen);`}</p>
+           <p>{`     return (`}</p>
+           <p>{`       <div className="pt-5">`}</p>
+           <p>{`         <div className={card card-filter}>`}</p>
+           <p>{`           <div className={'card-header {HeaderClass}} onClick={handleOpenClose}>`}</p>
+           <p>{`             <span className="fs-2 float-start pt-2">{Title}</span>`}</p>
+           <p>{`             <span className="fs-4 float-end pt-3 icon"><i className={!isOpen ? "fas fa-arrow-turn-down" : "fas fa-arrow-turn-up"}></i></span>`}</p>
+           <p>{`           </div>`}</p>
+           <p>{`           <div className={card-body {isOpen ? "show-filter-body" : "hidden-filter-body"}}>{children}</div>`}</p>
+           <p>{`         </div>`}</p>
+           <p>{`       </div>`}</p>
+           <p>{`     );`}</p>
+           <p>{`   };`}</p>
+           <p>{`   export default memo(FilterComponent);`}</p>
+              </div>
         </FilterComponent>
         </div>
       </div>
