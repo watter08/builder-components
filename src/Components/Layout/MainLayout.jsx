@@ -6,11 +6,14 @@ import { LinksMock } from "../../Contants/LayoutConstant";
 const MainLayoutComponent = ({ ...rest }) => {
   return (
     <>
-      <div class="wrapper">
-        <div class="sidebar">
+      <div className="wrapper">
+        <div className="sidebar">
             <AsideComponent Links={LinksMock} />
         </div>
+        <div className="main">
         <Outlet />
+        </div>
+       
       </div>
     </>
   );

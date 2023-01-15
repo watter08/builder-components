@@ -1,8 +1,12 @@
 // importing core styling file
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import "../fontawesome/scss/fontawesome.scss";
 
 // our project needs Classic Solid, Brands, and Sharp Solid 
 @import "../fontawesome/scss/solid.scss";
 @import "../fontawesome/scss/brands.scss";
 
-@import "./index.css";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "./layout.scss";
+@import "./buttons.scss";
+@import "./filter.scss";

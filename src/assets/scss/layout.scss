@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-
 *{
-    list-style: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    list-style: none !important;
+    text-decoration: none !important;
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box !important;
+    font-family: Roboto;
 }
 
 body{
@@ -46,7 +43,7 @@ body{
 
 .wrapper .sidebar .profile p{
   color: rgb(206, 240, 253);
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .wrapper .sidebar ul li a{
@@ -54,7 +51,7 @@ body{
   padding: 13px 30px;
   border-bottom: 1px solid #10558d;
   color: rgb(241, 237, 237);
-  font-size: 16px;
+  font-size: 1.1rem;
   position: relative;
 }
 
@@ -82,3 +79,6 @@ body{
     display: block;
 }
 
+.wrapper .main {
+  padding-left: 230px;
+}
