@@ -1,4 +1,89 @@
 .primary {
     background-color: #7052ff;
+    background-image: linear-gradient(
+        to right,
+        #3268ff,
+        #4481eb,
+        #0c62e2,
+        #3f86ed
+      );
     color: #ffffff;
+}
+
+.danger {
+    background-image: linear-gradient(
+        to right,
+        #eb3941,
+        #f15e64,
+        #e14e53,
+        #e2373f
+      );
+    color: #ffffff;
+}
+
+.warning {
+    background-image: linear-gradient(
+      to right,
+      #fce412,
+      #ffc107,
+      #ffc107,
+      #ffc107,
+
+    );
+    color: #3f3f3f;
+}
+
+.info {
+    background-image: linear-gradient(
+        to right,
+        #36adf1,
+        #2891e7,
+        #6b8dd6,
+        #2896fc
+      );
+    color: #ffffff;
+}
+
+.success {
+    background-image: linear-gradient(
+        to right,
+        #0ba360,
+        #3cba92,
+        #30dd8a,
+        #2bb673
+      );
+    color: #ffffff;
+}
+
+.secondary {
+    background-image: linear-gradient(
+        to right,
+        #4b4646,
+        #747071,
+        #242222,
+        #777777
+      );
+    color: #ffffff;
+}
+
+.dark {
+    background-image: linear-gradient(
+        to right,
+        #29323c,
+        #485563,
+        #2b5876,
+        #4e4376
+      );
+    color: #ffffff;
+}
+
+.light {
+    background-image: linear-gradient(
+        to right,
+        #ffffff,
+        #e0dddd,
+        #fdeeee,
+        #dadada
+      );
+    color: #3d3c3c;
 }

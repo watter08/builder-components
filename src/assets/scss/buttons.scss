@@ -1,94 +1,178 @@
 @use './variables' as v;
 
 button {
-    min-width: v.$ButtonMinWidth;
-    min-height: v.$ButtonMinHeight;
-    margin: v.$ButtonMargin;
-    border-radius: v.$ButtonBorderRadius;
-    font-size: v.$ButtonFontSize;
-    font-weight: v.$ButtonFontWeight;
-    color: #fff;
-    cursor: pointer;
-    text-align: center;
-    border: none;
-    background-size: v.$ButtonBackgroundSize;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    -webkit-box-shadow: 0px 0px 21px -9px rgba(46,46,46,0.8);
-    -moz-box-shadow: 0px 0px 21px -9px rgba(46,46,46,0.8);
-    box-shadow: 0px 0px 21px -9px rgba(46,46,46,0.8);
+  min-width: v.$ButtonMinWidth;
+  min-height: v.$ButtonMinHeight;
+  margin: v.$ButtonMargin;
+  border-radius: v.$ButtonBorderRadius;
+  font-size: v.$ButtonFontSize;
+  font-weight: v.$ButtonFontWeight;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: v.$ButtonBackgroundSize;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-box-shadow: 0px 0px 21px -9px rgba(46, 46, 46, 0.8);
+  -moz-box-shadow: 0px 0px 21px -9px rgba(46, 46, 46, 0.8);
+  box-shadow: 0px 0px 21px -9px rgba(46, 46, 46, 0.8);
 }
 
 
 .btn-dark {
-    background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       #29323c,
       #485563,
       #2b5876,
-      #4e4376
-    );
-  }
+      #4e4376);
+}
 
-  .btn-primary{
-    background-image: linear-gradient(
-      to right,
+.btn-primary {
+  background-image: linear-gradient(to right,
       #25aae1,
       #4481eb,
       #04befe,
-      #3f86ed
-    );
-    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-  }
+      #3f86ed);
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
 
-  .btn-success {
-    background-image: linear-gradient(
-      to right,
+.btn-success {
+  background-image: linear-gradient(to right,
       #0ba360,
       #3cba92,
       #30dd8a,
-      #2bb673
-    );
-    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
-  }
+      #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
 
-  .btn-danger {
-    background-image: linear-gradient(
-      to right,
+.btn-danger {
+  background-image: linear-gradient(to right,
       #eb3941,
       #f15e64,
       #e14e53,
-      #e2373f
-    );
-    box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
-  }
+      #e2373f);
+  box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+}
 
-  .btn-info {
-    background-image: linear-gradient(
-      to right,
+.btn-info {
+  background-image: linear-gradient(to right,
       #36adf1,
       #2891e7,
       #6b8dd6,
-      #2896fc
-    );
-    box-shadow: 0 4px 15px 0 rgba(19, 137, 233, 0.75);
-  }
+      #2896fc);
+  box-shadow: 0 4px 15px 0 rgba(19, 137, 233, 0.75);
+}
 
-  .btn-warning {
-    background-image: linear-gradient(
-      to right,
+.btn-warning {
+  background-image: linear-gradient(to right,
       #fce412,
       #ffc107,
       #ffc107,
       #ffc107,
 
     );
-    box-shadow: 0 4px 15px 0 rgba(236, 213, 5, 0.75);
-  }
+  box-shadow: 0 4px 15px 0 rgba(236, 213, 5, 0.75);
+}
 
-  .btn-light, .btn-outline-light {
-    color: rgb(70, 70, 70) ;
-    box-shadow: 0 4px 15px 0 rgba(66, 66, 65, 0.75);
-  }
+.btn-light,
+.btn-outline-light {
+  color: rgb(70, 70, 70);
+  box-shadow: 0 4px 15px 0 rgba(66, 66, 65, 0.75);
+}
+
+
+.fab-button-option {
+  position: fixed;
+  right: 30px;
+  bottom: 38px;
+  border-radius: 50%;
+}
+
+.button-option {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.fab-button-option > .button-option {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 0;
+  background: #7352ff;
+  color: #f9f9f9;
+  transition: 0.25s;
+}
+
+.fab-button-option > .button-option > i {
+  font-size: 32px;
+}
+
+.menu-button-option {
+  position: absolute;
+  bottom: 76px;
+  left: 0;
+  display: grid;
+  place-content: center;
+  gap: 12px;
+  width: 64px;
+  scale: 0;
+  translate: 0 80%;
+  transform-origin: 50% 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.375s;
+}
+
+.fab-button-option.open > .button-option {
+  rotate: 45deg;
+}
+
+.fab-button-option.open > .menu-button-option {
+  scale: 1;
+  translate: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-button-option > .button-option {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color: #e0e0e0;
+  transition: 0.3s;
+}
+
+.menu-button-option > .button-option:hover {
+ background: rgba(255,255,255,0.16);
+}
+
+.menu-button-option > .button-option > span {
+  position: absolute;
+  right: 64px;
+  white-space: nowrap;
+  translate: 10px 0;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.menu-button-option > .button-option:hover > span {
+translate: 0;
+opacity: 1;
+visibility: visible;
+
+}
