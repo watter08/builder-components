@@ -1,4 +1,5 @@
 import { memo } from "react"
+import CodeComponent from "../../Components/Code/CodeComponent"
 
 
 const HomeComponentPage = () => {
@@ -24,8 +25,9 @@ const HomeComponentPage = () => {
                     <h2>Componentes:</h2>
                     <h5>* Filter</h5>
                     <h5>* Buttons</h5>
+                    <h5>* Code</h5>
                 </div>
-            </div>     
+            </div>    
         </div>
     )
 }

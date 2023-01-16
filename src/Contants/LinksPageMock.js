@@ -1,6 +1,7 @@
 export const LinksPagesMock = {
     Forms : {
         Buttons: "Forms/Buttons",
-        Filter: "Forms/Filter"
+        Filter: "Forms/Filter",
+        CheckBoxes:"Forms/CheckBoxes",
     }
 }

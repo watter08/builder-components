@@ -1,12 +1,6 @@
 .primary {
     background-color: #7052ff;
-    background-image: linear-gradient(
-        to right,
-        #3268ff,
-        #4481eb,
-        #0c62e2,
-        #3f86ed
-      );
+    background-image: linear-gradient( to right, #3268ff, #4481eb,  #0c62e2, #3f86ed  );
     color: #ffffff;
 }
 
@@ -87,3 +81,24 @@
       );
     color: #3d3c3c;
 }
+
+.checkbox-border-info,
+.checkbox-border-primary,
+.checkbox-border-warning,
+.checkbox-border-danger,
+.checkbox-border-success,
+.checkbox-border-dark,
+.checkbox-border-light {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+
+
+.checkbox-border-primary { border-color: #1cc39b;}
+.checkbox-border-primary { border-color: #1cc39b;}
+.checkbox-border-primary { border-color: #1cc39b;}
+.checkbox-border-primary { border-color: #1cc39b;}
+.checkbox-border-primary { border-color: #1cc39b;}
+.checkbox-border-primary { border-color: #1cc39b;}
+.checkbox-border-primary { border-color: #1cc39b;}
