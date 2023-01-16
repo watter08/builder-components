@@ -5,6 +5,7 @@ export const LinksMock = [
     { link: LinksPagesMock.Forms.Filter, description : "Filter"  , icon : "fas fa-filter", isActive : false },
     { link: LinksPagesMock.Forms.Buttons, description : "Buttons"  , icon : "fas fa-hand-pointer", isActive : false },
     { link: LinksPagesMock.Forms.CheckBoxes, description : "CheckBox"  , icon : "fas fa-check", isActive : false },
+    { link: LinksPagesMock.Forms.Others, description : "Others"  , icon : "fas fa-code", isActive : false },
     
     
 ]

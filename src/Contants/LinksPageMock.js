@@ -3,5 +3,6 @@ export const LinksPagesMock = {
         Buttons: "Forms/Buttons",
         Filter: "Forms/Filter",
         CheckBoxes:"Forms/CheckBoxes",
+        Others:"Forms/Others"
     }
 }
