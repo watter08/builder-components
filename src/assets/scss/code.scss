@@ -1,9 +1,10 @@
 .code-body {
-    height: 500px;
-    background-color: #2b2e31;
-    border-radius: 10px;
+    background-color: #252627;
+    border-radius: 10px 10px 5px 5px;
+
 }
 
+.code-icon{ cursor:pointer;}
 .hidden-code-body {
     height: 60px;
     transition: visibility 0s, opacity 0.375s linear;
